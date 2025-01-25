@@ -1,31 +1,33 @@
-# Twiit - Plataforma pessoal
+# SpaceShip-Minigame - Jogo de Nave
 
-> Twiit é um desenvolvimento pessoal de como funcionaria o back-end de uma aplicação de mídia social como o Instagram e o Facebook por exemplo. O projeto conta com escopos de segurança e autenticação utilizando geração de tokens
-através do JWT e do OAuth2, suas funcionalidades são as necessárias para que este fluxo funcione corretamente. A aplicação tem as principais funcionalidades:
-> - Um usuário administrador pode criar outros usuários;
-> - Um usuário pode efetuar um login e assim terá um token de autenticação;
-> - Todos os usuários logados consegue gerar tweets (Verificacao através do token quando efetuado o login);
-> - Todos os usuários logados conseguem ver todos os tweets criados (com paginação)
-> - Somente o usuário quem criou o seu tweet, pode deletá-lo;
-> - Um usuário Administrador pode criar outros usuários Administradores;
-> - Um usuário básico não pode criar usuários;
+> SpaceShip-Minigame é um projeto pessoal que implementa um emocionante jogo de nave espacial, desenvolvido em **Java (versão JDK 21)**. Utilizando **JFrame** como base para a interface gráfica, o jogo consiste em uma experiência interativa onde o jogador controla uma nave que precisa atravessar uma fase cheia de desafios, enfrentando inimigos e aproveitando boosts para melhorar seu desempenho.
 
+> **JFrame**, parte do pacote **Java Swing**, é uma classe usada para criar janelas gráficas interativas. Ele permite que desenvolvedores projetem jogos e aplicativos com componentes como botões, painéis e animações. Neste projeto, **JFrame** foi essencial para desenhar o cenário, a movimentação da nave e dos inimigos, bem como para criar os eventos visuais e interativos do jogo.
+
+As funcionalidades incluem:
+- Controle fluido da nave, permitindo movimentos suaves em todas as direções.
+- Sistema de combate, com a possibilidade de atirar em inimigos que surgem no caminho.
+- Inimigos com movimentação programada, tornando cada fase desafiadora.
+- Boosts espalhados pela fase, como:
+  - **Aumento de velocidade**;
+  - **Melhoria na taxa de disparos**;
+  - **Recuperação de vida**.
+- Progressão dinâmica de dificuldade à medida que a fase avança.
+- Tela de vitória ao completar a fase ou de derrota caso a nave seja destruída.
 
 ## 💻 Pré-requisitos
 
-Caso deseje instalar o projeto para verificar, fique a vontade! Antes de começar, é necessário que os seguintes passos estejam configurados:
+Caso deseje executar o jogo, siga os passos abaixo. Certifique-se de que o ambiente está configurado corretamente:
 
-- Java 21 ou superior instalado no ambiente;
-- Maven instalado e apontado nas variáveis de ambiente;
-- Geração da chave pública e privada através do OpenSSL (O projeto conta com uma chave pública e privada default, mas é de extrema necessidade que seja gerada uma referente ao seu ambiente);
-
+- **Java 21** ou superior instalado no ambiente;
+- Maven (ou ferramenta equivalente para gerenciamento de dependências);
+- Ambiente IDE como IntelliJ ou Eclipse para rodar o projeto.
 
 ## 🚀 Sobre o projeto
 
-O projeto ainda está em desenvolvimento, não possuindo um frontend integrado com a aplicação, tendo que suas requisições sejam acessadas diretamente aos endpoints. Este projeto foi inicialmente criado para testar as habilidades em JWT e OAuth, alternativas de segurança na qual venho interagindo com elas a algum tempo. O projeto foi desenvolvido com Java 21, Spring como framework, JWT e OAuth como tecnologias de segurança de usuário, e, JPA e MySql como mapeamento de objetos e banco de dados. Foi desenvolvido alguns passos com o SSL para geração da chave pública e privada necessárias ao JWT, mas que fogem do escopo deste projeto. 
+O SpaceShip-Minigame foi desenvolvido como um exercício para explorar habilidades em Java e no uso de **JFrame** para criar interfaces gráficas e animações em tempo real. A principal motivação foi projetar um jogo simples, porém divertido e desafiador, com mecânicas de combate e progressão que cativam o jogador.
 
-
-## :coffee: Contratos da API
-O projeto conta com as funcionalidades detalhadas em seu descritivo e as suas necessidades antes do deploy em sua máquina pessoal já mencionadas. Com estes 2 pontos configurados, já é possível subir o projeto e realizar um teste com sua integração verificando os constratos passados no swagger.yaml.
-
-Em caso de dúvida ou alterações, estou a disposição. Abraços! 👋
+Com cenários dinâmicos e desafios crescentes, o projeto proporciona uma experiência que combina ação e estratégia, enquanto explora conceitos fundamentais de programação, como:
+- Manipulação de eventos no Java;
+- Ciclo de vida do jogo (desenho da tela e detecção de colisões);
+- Estruturas de controle para movimentação e ações.
